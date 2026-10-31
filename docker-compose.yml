@@ -1,0 +1,17 @@
+# Optional local Postgres for development (Neon is used in production).
+# Start with:  docker compose up -d
+# Uses port 5433 so it won't clash with another Postgres on 5432.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: meditrack
+      POSTGRES_PASSWORD: meditrack
+      POSTGRES_DB: meditrack
+    ports:
+      - "5433:5432"
+    volumes:
+      - meditrack-db:/var/lib/postgresql/data
+
+volumes:
+  meditrack-db:

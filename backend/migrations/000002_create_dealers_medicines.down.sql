@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS medicines;
+DROP TABLE IF EXISTS dealers;

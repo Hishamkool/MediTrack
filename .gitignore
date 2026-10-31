@@ -1,0 +1,10 @@
+# secrets
+.env
+.env.local
+# build output
+backend/bin/
+frontend/dist/
+node_modules/
+
+#other folders
+Screenshots
